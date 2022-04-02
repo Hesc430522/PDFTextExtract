@@ -37,8 +37,8 @@ def tranRequest(query_word):
     reload(sys)
 
     YOUDAO_URL = 'https://openapi.youdao.com/api'
-    APP_KEY = '0f560b481662b694'
-    APP_SECRET = 'BiN7rKwelDIbb3oCtLc5ZaeE91QHzfY9'
+    APP_KEY = ''    # 有道云app key
+    APP_SECRET = '' # 有道云app secret
     data = {}
 
     q = query_word
@@ -97,7 +97,7 @@ def DataClea(data):
             ToCsvFile(dictWord)
 
 if __name__ == '__main__':
-    
+
     pdfFile = "" # 需要翻译的PDF文件
     csvFile = "" # 单词保存的CSV文件
 
